@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\General\hopscotch-logo.png" />
+    <None Remove="Assets\Home\generator.png" />
+    <None Remove="Assets\Home\pixelart_template.json" />
+    <None Remove="download_icon.png" />
+    <None Remove="/Assets/General/down_icon.png" />
+    <None Remove="file_icon.png" />
+    <None Remove="folder_icon.png" />
+    <None Remove="/Assets/General/left_icon.png" />
+    <None Remove="like.png" />
+    <None Remove="phone_icon.png" />
+    <None Remove="plant.png" />
+    <None Remove="play.png" />
+    <None Remove="right_icon.png" />
+    <None Remove="search_icon.png" />
+    <None Remove="settings.png" />
+    <None Remove="speaker_icon.png" />
+    <None Remove="tilt_icon.png" />
+    <None Remove="upload_icon.png" />
+    <None Remove="up_icon.png" />
+    <None Remove="world_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.9.2" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2478.35" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SharpVectors" Version="1.8.4" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\General\hopscotch-logo.png" />
+    <Resource Include="Assets\Home\generator.png" />
+    <Resource Include="Assets\Home\pixelart_template.json" />
+    <Resource Include="Assets\General\download_icon.png" />
+    <Resource Include="/Assets/General/down_icon.png" Link="Assets\General\down_icon.png" />
+    <Resource Include="Assets\General\file_icon.png" />
+    <Resource Include="folder_icon.png" />
+    <Resource Include="Assets\General\/Assets/General/left_icon.png" />
+    <Resource Include="like.png" />
+    <Resource Include="phone_icon.png" />
+    <Resource Include="plant.png" />
+    <Resource Include="play.png" />
+    <Resource Include="right_icon.png" />
+    <Resource Include="search_icon.png" />
+    <Resource Include="settings.png" />
+    <Resource Include="speaker_icon.png" />
+    <Resource Include="tilt_icon.png" />
+    <Resource Include="upload_icon.png" />
+    <Resource Include="up_icon.png" />
+    <Resource Include="world_icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+</Project>
