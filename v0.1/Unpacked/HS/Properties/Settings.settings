@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="HS.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Aliases" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"1":"helo","12":"d","123":"123","1234":"helo","12345":"helo","123456":"helo","1234567":"helo","12345678":"helo","123456789":"helo","1234567890":"helo"}</Value>
+    </Setting>
+    <Setting Name="Modded_Editor" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Plugin_List" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{"plugins":[]}</Value>
+    </Setting>
+    <Setting Name="Projects_Created" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">52</Value>
+    </Setting>
+    <Setting Name="Projects_Played" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1876</Value>
+    </Setting>
+    <Setting Name="Users_Viewed" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">312</Value>
+    </Setting>
+    <Setting Name="User_Id" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Is_Setup" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Seconds_Spent" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Start_Timestamp" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Time_Saved" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
