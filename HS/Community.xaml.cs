@@ -77,7 +77,6 @@ namespace HS
         protected void OnWindowSizeChanged(object sender, SizeChangedEventArgs e)
         {
            projects_grid.MaxWidth = e.NewSize.Width;
-            //display_projects(global_page-1, global_sender, null);
             if (projects_grid.Children.Count > 0)
             {
                 if (categories.SelectedIndex == 0)
@@ -328,8 +327,6 @@ namespace HS
                     coldef.Width = GridLength.Auto;
                     grid.ColumnDefinitions.Add(expandcol);
                     grid.ColumnDefinitions.Add(coldef);
-                    //grid.ShowGridLines = true;
-                    // ^^ debug only
 
                     Brush bg = new SolidColorBrush(Color.FromArgb(211,211,211,1));
                     grid.Background = bg;
@@ -423,7 +420,6 @@ namespace HS
             joined.SetValue(Grid.ColumnProperty, 0);
             userDetails.Children.Add(joined);
 
-            //userDetails.ShowGridLines = true;
             userDetails.ColumnDefinitions.Add(expandcols);
             userDetails.ColumnDefinitions.Add(pfpcols);
             userDetails.ColumnDefinitions.Add(_expandcols);
@@ -578,7 +574,6 @@ namespace HS
             joined.SetValue(Grid.ColumnProperty, 0);
             userDetails.Children.Add(joined);
 
-            //userDetails.ShowGridLines = true;
             userDetails.ColumnDefinitions.Add(expandcols);
             userDetails.ColumnDefinitions.Add(pfpcols);
             userDetails.ColumnDefinitions.Add(_expandcols);
@@ -755,7 +750,6 @@ namespace HS
                 textblock.Background = new SolidColorBrush(Colors.AliceBlue);
                 textblock.Padding = new Thickness(15, 50, 15, 15);
                 textblock.FontSize = 20;
-                //textblock.Width = img_dimensions; // i know its bad practice but its the same value
                 textblock.TextWrapping = TextWrapping.Wrap;
 
                 TextBlock user_textblock = new TextBlock();
@@ -767,7 +761,6 @@ namespace HS
                 user_textblock.Padding = new Thickness(15);
                 user_textblock.FontSize = 15;
                 user_textblock.FontStyle = FontStyles.Italic;
-                //user_textblock.Width = img_dimensions; // i know its bad practice but its the same value
                 user_textblock.TextWrapping = TextWrapping.Wrap;
 
                 Image img = new Image();
@@ -951,7 +944,6 @@ namespace HS
                     textblock.Background = new SolidColorBrush(Colors.AliceBlue);
                     textblock.Padding = new Thickness(15, 50, 15, 15);
                     textblock.FontSize = 20;
-                    //textblock.Width = img_dimensions; // i know its bad practice but its the same value
                     textblock.SetValue(Grid.RowProperty, 1);
                     textblock.TextWrapping = TextWrapping.Wrap;
 
@@ -964,7 +956,6 @@ namespace HS
                     user_textblock.Padding = new Thickness(15);
                     user_textblock.FontSize = 15;
                     user_textblock.FontStyle = FontStyles.Italic;
-                    //user_textblock.Width = img_dimensions; // i know its bad practice but its the same value
                     user_textblock.SetValue(Grid.RowProperty, 1);
                     user_textblock.TextWrapping = TextWrapping.Wrap;
 
@@ -1057,26 +1048,9 @@ namespace HS
                     projects_grid.Children.Add(grid);
                 }
 
-                //Button loadmore = new Button();
-                //loadmore.Content = "Load More";
-                //loadmore.SetValue(Grid.ColumnProperty, 1);
-                //loadmore.SetValue(Grid.ColumnSpanProperty, 7);
-                //loadmore.Background = (SolidColorBrush)new BrushConverter().ConvertFromString("#d4d4d4");
-                //loadmore.FontFamily = new FontFamily("Arial");
-                //loadmore.FontWeight = FontWeights.Bold;
-                //loadmore.FontSize = 20;
-                //loadmore.Margin = new Thickness(0, (Math.Ceiling((double)i / 4) * (height + gap)) + 50, 0, 0);
-                //loadmore.Height = 50;
-                //loadmore.Click += new RoutedEventHandler((object _sender, RoutedEventArgs _e) =>
-                //{
-                //    destroy_button(loadmore);
-                //    display_projects(page + 1, sender, e, true, i);
-                //});
                 global_page = page + 1;
                 global_i = i;
                 global_sender = (TabControl)sender;
-
-                //projects_grid.Children.Add(loadmore);
             }
         }
 
