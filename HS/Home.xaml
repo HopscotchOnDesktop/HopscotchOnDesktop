@@ -9,7 +9,7 @@
         Title="Home" Height="540" Width="960">
     <Grid Background="Black">
         <ScrollViewer>
-            <Grid  x:Name="grid" ShowGridLines="True">
+            <Grid  x:Name="grid">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20"/>
                 <ColumnDefinition Width="1*"/>
