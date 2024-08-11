@@ -13,6 +13,9 @@
     <Compile Update="Community.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Edit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Home.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Community.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Edit.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Home_Windows\PixelArt.xaml">

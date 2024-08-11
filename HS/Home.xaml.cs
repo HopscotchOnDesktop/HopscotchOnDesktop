@@ -46,6 +46,15 @@ namespace HS
             }
         }
 
+        private void EditProject(object sender, EventArgs e)
+        {
+            if (EditProjectID.Text.ToString() != "" && EditProjectID.Text.ToString() != null)
+            {
+                Edit editproject = new Edit(EditProjectID.Text.ToString());
+                editproject.Show();
+            }
+        }
+
         private void OpenTile(object sender, MouseEventArgs e)
         {
             if (sender is Image _sender)
