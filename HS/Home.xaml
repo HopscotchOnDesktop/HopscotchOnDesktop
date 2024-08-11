@@ -9,7 +9,7 @@
         Title="Home" Height="540" Width="960">
     <Grid Background="Black">
         <ScrollViewer>
-            <Grid  x:Name="grid">
+            <Grid  x:Name="grid" ShowGridLines="True">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="20"/>
                 <ColumnDefinition Width="1*"/>
@@ -41,6 +41,18 @@
                 <RowDefinition Height="20" />
             </Grid.RowDefinitions>
                 <Image MouseDown="OpenTile" Tag="HS.Home_Windows.PixelArt" Source="Assets/Home/generator.png" Grid.Column="1" Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="3"/>
+                <Grid Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="3" Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Viewbox Margin="10,0,10,0" HorizontalAlignment="Center" Grid.Row="0">
+                        <TextBlock Text="Edit Project (Preview)" HorizontalAlignment="Center"/>
+                    </Viewbox>
+                    <TextBox x:Name="EditProjectID" Height="30" Grid.Row="1" Margin="10,0,10,0"/>
+                    <Button Grid.Row="2" Content="Open Project" Margin="10" Click="EditProject"/>
+                </Grid>
                 <Border Background="WhiteSmoke" Grid.Row="1" Grid.Column="5">
                     <Grid >
                         <Grid.RowDefinitions>
