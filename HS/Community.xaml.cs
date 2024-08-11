@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -566,7 +567,7 @@ namespace HS
             pfpcols.Width = GridLength.Auto;
 
             TextBlock joined = new TextBlock();
-            joined.Text = "Joined " + DateTime.Parse(userrq.created_at, null, System.Globalization.DateTimeStyles.RoundtripKind).ToString("MMMM yyyy");
+            joined.Text = "Joined " + DateTime.Parse(userrq.created_at, null, System.Globalization.DateTimeStyles.RoundtripKind).ToString("MMMM yyyy", CultureInfo.InvariantCulture);
             joined.VerticalAlignment = VerticalAlignment.Center;
             joined.HorizontalAlignment = HorizontalAlignment.Right;
             joined.Padding = new Thickness(20);
